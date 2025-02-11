@@ -1,7 +1,18 @@
 import { defineConfig } from 'vite'
 import uni from '@dcloudio/vite-plugin-uni'
+import removeComments from 'postcss-discard-comments'
+import autoprefixer from 'autoprefixer'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [uni()]
+  plugins: [uni()],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        api: 'modern'
+      }
+    },
+    postcss: {
+      plugins: [autoprefixer(), removeComments({ removeAll: true })]
+    }
+  }
 })
