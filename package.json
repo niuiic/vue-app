@@ -35,6 +35,7 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
+    "@cgcs2000/mapbox-gl": "^2.3.0",
     "@dcloudio/uni-app": "3.0.0-4030620241128001",
     "@dcloudio/uni-app-harmony": "3.0.0-4030620241128001",
     "@dcloudio/uni-app-plus": "3.0.0-4030620241128001",
@@ -50,8 +51,10 @@
     "@dcloudio/uni-mp-weixin": "3.0.0-4030620241128001",
     "@dcloudio/uni-mp-xhs": "3.0.0-4030620241128001",
     "@dcloudio/uni-quickapp-webview": "3.0.0-4030620241128001",
+    "axios": "^1.7.9",
     "vue": "^3.4.21",
-    "vue-i18n": "^9.1.9"
+    "vue-i18n": "^9.1.9",
+    "wot-design-uni": "^1.6.1"
   },
   "devDependencies": {
     "@dcloudio/types": "^3.4.8",
